@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Insurance Data in the US</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <h1>HEALTH INSURANCE DATA ANALYSIS IN THE US</h1>
+
+    <div class="visualization-row">
+        <div class="visualization-container" onmouseenter="showTooltip(this, 'The age groups between 20-29 and 40-49 have the highest insurance counts.')">
+          <h2>Age Distribution by Gender (Bar Chart)</h2>
+          <img src="/static/images/Age_distribution_by_gender.png" alt="Age Distribution by Gender" class="resize-image">
+          <div class="details">Age Distribution by Gender.</div>
+          <div class="comment" style="display: none;">The age groups between 20-29 and 40-49 have the highest insurance counts.</div>
+        </div>
+        
+
+        <div class="visualization-container" onclick="showImageDetails('BMI Distribution by Gender', 'BMI Distribution by Gender shows the distribution of BMI values in different genders.')">
+            <h2>BMI Distribution by Gender (Bar Chart)</h2>
+            <img src="/static/images/BMI_Distribution_by_Gender.png" alt="BMI Distribution by Gender" class="resize-image">
+            <div class="details">BMI Distribution by Gender.</div>
+            <div class="comment" style="display: none;">Males insured have higher body Mass Index(BMI as)as compared to females .</div>
+        </div>
+    </div>
+
+    <div class="visualization-row">
+        <div class="visualization-container" onclick="showImageDetails('Insurance Charges by Age', 'Insurance Charges by Age shows the average insurance charges for each age.')">
+            <h2>Insurance Charges by Age (Trend - Line Chart)</h2>
+            <img src="/static/images/Average_Insurance_Charges_by_Age.png" alt="Insurance Charges by Age" class="resize-image">
+            <div class="details">Insurance Charges by Age .</div>
+            <div class="comment" style="display: none;">Shows the average insurance charges for each age, its is evident that the older you get the higher the charges.</div>
+            
+        </div>
+
+        <div class="visualization-container" onclick="showImageDetails('Insurance Charges by BMI', 'Insurance Charges by BMI shows the average insurance charges for different BMI categories.')">
+            <h2>Insurance Charges by BMI</h2>
+            <img src="/static/images/Average _Insurance_Charges_by_BMI_Category.png" alt="Insurance Charges by BMI" class="resize-image">
+            <div class="details">Insurance Charges by BMI .</div>
+            <div class="comment" style="display: none;">Shows the average insurance charges for different BMI categories,this cleary indicated the higher your BMI the higher the charges you incur.</div>
+        </div>
+    </div>
+
+    <div class="visualization-row">
+        <div class="visualization-container" onclick="showImageDetails('Average Insurance Charges by Gender and Smoking Status', 'Average Insurance Charges by Gender and Smoking Status shows the average insurance charges for different gender and smoking status combinations.')">
+            <h2>Average Insurance Charges by Gender and Smoking Status</h2>
+            <img src="/static/images/Average_Insurance_Charges_by_Gender_and_Smoking_Status.png" alt="Average Insurance Charges by Gender and Smoking Status" class="resize-image">
+            <div class="details">Average Insurance Charges by Gender and Smoking Status.</div>
+            <div class="comment"style="display:none;">This shows there are more male smokers compared to females.The chart also shows that the smokers also face high charges  as compared to non smokers  </div>
+            
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+
+</html>
