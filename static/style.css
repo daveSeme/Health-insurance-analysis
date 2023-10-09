@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f0f0f0;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1200px; /* Adjusted max width */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.visualization-container {
+  border: 1px solid #ddd;
+  padding: 50px; /* Increased padding */
+  border-radius: 10px;
+  background-color: white;
+  margin-right: 20px; /* Added margin between widgets */
+  transition: background-color 0.3s ease-in-out;
+  max-width: 550px; /* Increased max width */
+  cursor: pointer;
+}
+
+.visualization-container:hover {
+  background-color: #f0f0f0;
+}
+
+.visualization-container img {
+  width: 100%; /* Increased image width */
+  border-radius: 10px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.visualization-container h2 {
+  font-size: 30px; /* Increased font size for titles */
+  text-align: center; /* Center the title */
+}
+
+.visualization-container .details {
+  display: none;
+}
+
+.visualization-container:hover img {
+  opacity: 0.7;
+}
+
+.visualization-container:hover .details {
+  display: block;
+  font-size: 24px;
+}
+
+h1 {
+  text-align: center; /* Center the main title */
+  margin-bottom: 20px;
+}
+
+.widgets {
+  display: flex; /* Use flexbox for horizontal arrangement */
+}
+
+/* Adjusted styles for individual widgets */
+.visualization-container:last-child {
+  margin-right: 0; /* Remove margin for the last widget */
+}
+
+
+
+.visualization-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.visualization-row .visualization-container {
+  width: 48%; /* Adjust as needed for spacing */
+  margin: 1%; /* Adjust as needed for spacing */
+}
